@@ -31,7 +31,7 @@ def syn(tokens):
         return L
     else:
         if token==')':
-            assert 1, "should not have got here"
+            assert 0, "should not have got here"
         return token
     
 def parse(loc):
