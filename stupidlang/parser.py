@@ -31,7 +31,7 @@ def syn(tokens):
         return L
     else:
         if token==')':
-            assert 0, "should not have got here"
+            raise ValueError('cannot begin expression with closed bracket')
         return token
     
 def parse(loc):
