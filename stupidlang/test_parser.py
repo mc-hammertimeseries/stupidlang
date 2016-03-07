@@ -28,5 +28,5 @@ class ParserTest(unittest.TestCase):
 
 	def test_parse(self):
 		self.assertEqual(parse(self.nestedEqn), ['+', 2, ['*', 3, True]])
-		with self.assertRaises(AssertionError):
+		with self.assertRaises(ValueError):
 			parse(')')
